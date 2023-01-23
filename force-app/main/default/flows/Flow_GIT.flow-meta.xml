@@ -27,10 +27,24 @@
         <name>First_Screen</name>
         <label>First Screen</label>
         <locationX>176</locationX>
+        <locationY>278</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Screen_2</name>
+        <label>Screen 2</label>
+        <locationX>176</locationX>
         <locationY>158</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
+        <connector>
+            <targetReference>First_Screen</targetReference>
+        </connector>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
@@ -38,7 +52,7 @@
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>First_Screen</targetReference>
+            <targetReference>Screen_2</targetReference>
         </connector>
     </start>
     <status>Active</status>
